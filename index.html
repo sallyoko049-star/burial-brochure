@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <title>In Loving Memory | Mrs. Vivian Uzoamaka Inyiama</title>
+  <meta name="description" content="Memorial tribute to Mrs. Vivian Uzoamaka Inyiama, Pioneer Head, Department of Nursing Science, Caritas University.">
+  <meta name="theme-color" content="#faf7f2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #faf7f2;
+      color: #2c2b28;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* centering container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 1240px) {
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* header */
+    .site-header {
+      background: #ffffffec;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e8e2d9;
+      width: 100%;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      gap: 10px;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.45rem;
+      letter-spacing: -0.2px;
+      color: #7f5539;
+    }
+    .logo p {
+      font-size: 0.68rem;
+      letter-spacing: 0.8px;
+      color: #9b7b5c;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+    }
+    .nav-link {
+      background: none;
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #4a3b2c;
+      cursor: pointer;
+      padding: 8px 14px;
+      transition: 0.2s;
+      border-radius: 40px;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #b45f2b;
+      background: #f5ede6;
+    }
+
+    #main-content {
+      min-height: 55vh;
+      padding: 24px 0 40px;
+    }
+
+    .hero-mini {
+      background: #f3ede7;
+      border-radius: 24px;
+      padding: 28px 20px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    /* image placeholders */
+    .portrait-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border: 3px solid white;
+      background: #dccfc4;
+    }
+
+    .tribute-portrait {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: inline-block;
+      margin-right: 12px;
+      vertical-align: middle;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 2px solid #f0e4da;
+      background: #dccfc4;
+    }
+
+    .tribute-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tribute-header h3 {
+      margin: 0;
+      flex: 1;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin: 20px 0 12px;
+      border-left: 4px solid #c29a6b;
+      padding-left: 14px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 12px 0 10px;
+      color: #7f5539;
+    }
+
+    .tribute-card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0,0,0,0.03);
+      border: 1px solid #efe4db;
+    }
+
+    .signature {
+      margin-top: 14px;
+      font-style: italic;
+      color: #9b7a5a;
+      border-top: 1px dashed #e9dfd5;
+      padding-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .reading-block {
+      background: #fefaf5;
+      border-left: 4px solid #c7a27b;
+      padding: 16px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+      border-radius: 0 16px 16px 0;
+    }
+
+    footer {
+      background: #e8dfd7;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.8rem;
+      color: #5f4c38;
+      margin-top: 30px;
+    }
+
+    .date-badge {
+      font-size: 0.72rem;
+      background: #f0e4da;
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 30px;
+    }
+
+    .quote-text {
+      font-size: 0.98rem;
+      font-style: italic;
+      color: #5e3e28;
+      line-height: 1.45;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, #e0d4ca, transparent);
+      margin: 20px 0;
+    }
+
+    /* read more/less */
+    .collapsible-text {
+      margin-top: 8px;
+    }
+    .tribute-full-text {
+      display: none;
+    }
+    .tribute-full-text.show-full {
+      display: block;
+      margin-top: 12px;
+    }
+    .read-more-btn {
+      background: none;
+      border: none;
+      color: #b45f2b;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 10px 0 5px;
+      margin-top: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* biography */
+    .bio-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .bio-portrait {
+      text-align: center;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    .bio-text {
+      width: 100%;
+    }
+    .bio-text h2 {
+      margin-top: 0;
+    }
+
+    /* responsive */
+    @media (min-width: 640px) {
+      .container {
+        padding: 0 32px;
+      }
+      .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 0;
+      }
+      .logo {
+        text-align: left;
+      }
+      .nav-links {
+        gap: 10px;
+      }
+      .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+      }
+      .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+      }
+      .bio-flex {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+      }
+      .bio-portrait {
+        flex: 0 0 180px;
+        max-width: 180px;
+      }
+      .bio-text {
+        flex: 1;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      .portrait-photo {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .logo h1 {
+        font-size: 1.3rem;
+      }
+      .nav-link {
+        font-size: 0.72rem;
+        padding: 6px 12px;
+      }
+      h2 {
+        font-size: 1.55rem;
+        padding-left: 12px;
+      }
+      .tribute-card {
+        padding: 16px;
+      }
+      .portrait-photo {
+        width: 120px;
+        height: 120px;
+      }
+      .tribute-portrait {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
+
+    .loading-spinner {
+      text-align: center;
+      padding: 40px 20px;
+      color: #b27d56;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    p {
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <h1>Vivian Uzoamaka Inyiama</h1>
+          <p>1968 ✦ 2026 | Pioneer Head, Nursing Science</p>
+        </div>
+        <div class="nav-links" id="nav-menu">
+          <button class="nav-link" data-page="home">Home</button>
+          <button class="nav-link" data-page="biography">Biography</button>
+          <button class="nav-link" data-page="liturgy">Funeral Liturgy</button>
+          <button class="nav-link" data-page="tributes">Tributes</button>
+          <button class="nav-link" data-page="memorial">Memorial</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="loading-spinner"><i class="fas fa-peace"></i>  Loading memorial...</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>“Eternal rest grant unto her, O Lord, and let perpetual light shine upon her.”</p>
+      <p style="margin-top: 10px;">Caritas University, Amorji Hile Enugu | In loving memory of Mrs. Vivian Uzoamaka Inyiama</p>
+    </div>
+  </footer>
+
+  <script>
+    // Helper function for read-more toggles
+    function bindReadMoreToggles() {
+      const buttons = document.querySelectorAll('.read-more-btn');
+      buttons.forEach(btn => {
+        btn.removeEventListener('click', btn._listener);
+        const handler = function(e) {
+          e.preventDefault();
+          const targetId = btn.getAttribute('data-target');
+          if (targetId) {
+            const fullTextDiv = document.getElementById(targetId);
+            if (fullTextDiv) {
+              const isExpanded = fullTextDiv.classList.contains('show-full');
+              if (isExpanded) {
+                fullTextDiv.classList.remove('show-full');
+                btn.innerHTML = '<i class="fas fa-chevron-down"></i> Read more';
+              } else {
+                fullTextDiv.classList.add('show-full');
+                btn.innerHTML = '<i class="fas fa-chevron-up"></i> Read less';
+              }
+            }
+          }
+        };
+        btn.addEventListener('click', handler);
+        btn._listener = handler;
+      });
+    }
+
+    // Placeholder image URLs (elegant memorial placeholders - easy to replace later)
+    const vivianHomePhoto = "https://placehold.co/400x400/e2d4ca/a4815e?text=Vivian&font=serif";
+    const vivianBioPhoto = "https://placehold.co/400x400/dccfc4/9b7a5a?text=Vivian+U.+Inyiama&font=serif";
+    
+    // Tribute placeholder images with initials (easy to replace with actual photos)
+    function getTributeImage(initial, name) {
+      // Using UI Avatars for clean placeholder images
+      return `https://ui-avatars.com/api/?background=b77e4a&color=fff&rounded=true&size=80&fontsize=0.35&name=${encodeURIComponent(initial)}`;
+    }
+
+    // Page content
+    const contentStore = {
+      home: () => `
+        <div class="hero-mini">
+          <img src="${vivianHomePhoto}" alt="Mrs. Vivian Uzoamaka Inyiama" class="portrait-photo">
+          <h1 style="font-size: 1.85rem; margin-top: 12px;">Death in the Ivory Tower</h1>
+          <p class="quote-text">“A genuinely warm individual, resourceful, peaceful and diligent.”</p>
+          <p><span class="date-badge"><i class="far fa-calendar-alt"></i> Memorial: 16th April, 2026</span></p>
+          <p style="margin-top: 16px;">It is with deep honour that we celebrate the life of Mrs. Vivian Uzoamaka Inyiama, Pioneer Head, Department of Nursing Science, Caritas University. Called to rest on 9th March, 2026. Her legacy of compassion, excellence and faith lives on.</p>
+        </div>
+        
+        <div class="grid-2">
+          <div class="tribute-card">
+            <i class="fas fa-church" style="font-size: 1.8rem; color:#b77e4a;"></i>
+            <h3>Funeral Arrangements</h3>
+            <p><strong>Final journey:</strong> Thursday 16th April, 2026.<br> Caritas University Community, Amorji Hile, Emene, Enugu.<br> Requiem Mass & interment followed by tribute.</p>
+            <p><em>“She ran the race, now the crown of honour.”</em></p>
+          </div>
+          <div class="tribute-card">
+            <i class="fas fa-heart" style="font-size: 1.8rem; color:#b77e4a;"></i>
+            <h3>University Tribute</h3>
+            <p>“Mrs. Inyiama worked tirelessly, nurtured students with the real light of Nursing. Even in ill health, she cared deeply.” — <strong>M. I. Onwukar, Registrar</strong></p>
+            <div class="signature">Adieu, our beloved HOD until the resurrection morning.</div>
+          </div>
+        </div>
+
+        <div class="tribute-card">
+          <i class="fas fa-feather-alt"></i>
+          <h3>From a friend & sister</h3>
+          <p>“Sister Vivy, you welcomed me with open mind. You always told me: 'we will nurture the students together.' You battled illness but used your strength to teach. Sleep well, woman with the most golden heart.” — <strong>Ezine Lady Onwuzu Uzoamaka</strong></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <i class="fas fa-dove" style="color:#ba8b5a;"></i> 
+          <p style="margin-top: 8px;">“I am the Resurrection and the Life. Whoever believes in me will live.” (John 11:25)</p>
+        </div>
+      `,
+      
+      biography: () => `
+        <div class="bio-flex">
+          <div class="bio-portrait">
+            <img src="${vivianBioPhoto}" alt="Mrs. Vivian Uzoamaka Inyiama" class="portrait-photo">
+            <p class="date-badge" style="margin-top: 12px;">4th February 1968 – 9th March 2026</p>
+          </div>
+          <div class="bio-text">
+            <h2>Biography</h2>
+            <p>Born into the loving family of late Felicia and Romanus Ondoguo of Umuavulu-Abor, Enugu State. Third of seven children, Vivian exhibited intellectual brilliance and deep kindness from childhood. She attended Iva-Valley Primary School, then Idaw River Girls Secondary School.</p>
+            <p>She trained at Bishop Shanahan School of Nursing and Midwifery, later earning postgraduate degrees. A Deputy Director of Nursing Services at Park Lane General Hospital (ESUT Teaching Hospital), she later became Head of Nursing Science at Caritas University. She also served as Chief Nursing Officer at IMT Clinic, trained birth attendants for WHO, and was President of Catholic Nurses Guild, Enugu Diocese.</p>
+            <p>She married Mr. Cyril Chukwuemeka Inyiama in 1997, blessed with three sons: Ugochukwu, Ifeanyichukwu, and Chukwuemeka. A devout Catholic, active in CWO, CCRN, and Mother of Perpetual Help Sodality.</p>
+            <div class="reading-block">“She was never idle, always ready to support family, friends and strangers. Her legacy is a shining example of strength and love.” — Rev. Fr. Stan Uche Onodugo</div>
+          </div>
+        </div>
+        <hr>
+        <div class="grid-2">
+          <div><i class="fas fa-graduation-cap"></i> <strong>Legacy in Nursing:</strong> Pioneer HOD Caritas University, mentored hundreds.</div>
+          <div><i class="fas fa-praying-hands"></i> <strong>Faith:</strong> Daily communicant, charismatic renewal leader.</div>
+        </div>
+      `,
+      
+      liturgy: () => `
+        <h2>Funeral Mass — Order of Christian Burial</h2>
+        <p><i class="fas fa-cross" style="color:#a47b56;"></i> Presided on Thursday, 16th April, 2026. Entrance Antiphon: <em>“As Jesus died and rose again, so God will raise up those who have died in Christ.”</em></p>
+        
+        <div class="reading-block">
+          <strong>📖 First Reading:</strong> Revelation 20:11 – 21:1<br>
+          “The dead were judged according to their deeds … I saw a new heaven and a new earth.” 
+        </div>
+        <div class="reading-block">
+          <strong>📜 Responsorial Psalm:</strong> Ps 114:9 — “I will walk in the presence of the Lord in the land of the living.”
+        </div>
+        <div class="reading-block">
+          <strong>✝️ Second Reading:</strong> Revelation 14:13 — “Happy are those who die in the Lord; they rest from their labours.”
+        </div>
+        <div class="reading-block">
+          <strong>📖 Gospel:</strong> Matthew 25:31-46 — “Come, you blessed of my Father, inherit the kingdom prepared for you.”
+        </div>
+        
+        <h3>Prayer of the Faithful</h3>
+        <p>For Mrs. Vivian, that she may share the light of Christ's resurrection; for all gathered, that we may live with faith; for the grieving, comfort.</p>
+        
+        <h3>Final Commendation</h3>
+        <p>“Father, into your hands we commend your daughter Vivian. May Christ, the Good Shepherd, lead her safely home.”</p>
+        <div class="tribute-card">
+          <i class="fas fa-leaf"></i> <strong>Prayer after Communion:</strong> Almighty God, may this Eucharist cleanse her and raise her to eternal joy. Amen.
+        </div>
+      `,
+      
+      tributes: () => `
+        <h2>❤️ Tributes of Love & Honour</h2>
+        <div class="grid-2">
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('C', 'Cyril')}" alt="Cyril Inyiama" class="tribute-portrait">
+              <h3>Husband — Mr. Cyril C. Inyiama</h3>
+            </div>
+            <p>“Baby was a jewel of inestimable value. She built my home, my backbone, my confidant. Her sterling qualities of faithfulness, honesty and gentleness are epitomized in her.”</p>
+            <div class="signature">— Inyiama Cyril C. (SNR)</div>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('U', 'Ugochukwu')}" alt="Ugochukwu" class="tribute-portrait">
+              <h3>Son — Ugochukwu Inyiama</h3>
+            </div>
+            <p>“Nwanyi Abor, my gentle mother with a big heart. You impacted me greatly. Jee nke oma, ezigbo nne.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('I', 'Ifeanyichukwu')}" alt="Ifeanyichukwu" class="tribute-portrait">
+              <h3>Son — Ifeanyichukwu Inyiama</h3>
+            </div>
+            <p>“My mother filled our hearts with love. She taught me through actions to be kind and fearless. Farewell, mum.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('CJ', 'Cyril Jnr')}" alt="Cyril Jnr" class="tribute-portrait">
+              <h3>Son — Cyril C. Inyiama (Jnr)</h3>
+            </div>
+            <p>“My best friend, Nlomisi. Your legacy lives on. Rest well in the Lord's bosom.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('FS', 'Fr Stan')}" alt="Fr. Stan" class="tribute-portrait">
+              <h3>Brother — Rev. Fr. Stan Uche Onodugo</h3>
+            </div>
+            <p>“Vee… War!!! You were my protector, teacher, greatest supporter. Neighbours called you 'Oji Nwayo, mmiri doro edo'.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('CI', 'Chika')}" alt="Chika" class="tribute-portrait">
+              <h3>Sister — Mrs. Chika Igboeliman</h3>
+            </div>
+            <p>“You promised this sickness not unto 'KPAI LEVEL' but you fought well. ADIEU OJINWAYO.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('RO', 'Romanus')}" alt="Romanus" class="tribute-portrait">
+              <h3>Romanus Okelue Onodugo</h3>
+            </div>
+            <p>“Your kindness and joy inspire us. You are loved beyond words.”</p>
+          </div>
+          <div class="tribute-card">
+            <div class="tribute-header">
+              <img src="${getTributeImage('EL', 'Ezine')}" alt="Ezine" class="tribute-portrait">
+              <h3>Colleague — Ezine Lady Onwuzu Uzoamaka</h3>
+            </div>
+            <p>“A great tree has fallen. Jee nke oma my HOD, woman with the most golden heart.”</p>
+          </div>
+          
+          <div class="tribute-card" id="tribute-nwajagu">
+            <div class="tribute-header">
+              <img src="${getTributeImage('FN', 'Fidelis')}" alt="Dr. Fidelis" class="tribute-portrait">
+              <h3>Dr. Fidelis Nwajagu & Family</h3>
+            </div>
+            <div class="collapsible-text">
+              <p><strong>“It has been very very difficult to write this tribute... She was a bundle of talents, very organised, and intelligent.”</strong></p>
+            </div>
+            <div id="fullTributeNwajagu" class="tribute-full-text">
+              <p>She was a bundle of talents, very organised, and intelligent. 'V', as she was fondly called by my wife, was always available for us to tap from her wealth of wisdom. Her advice and worldview were top notch.</p>
+              <p>During her service years in ESUTTH Park Lane, she rose to become the best Matron that ever headed the Immunization unit. She mentored junior colleagues and was vindicated after being sent to remote villages in 2020.</p>
+              <p>Vee retired a month after I retired, and providence brought us together again at IMT Medical Centre. We frequently met with her family, even during her illness.</p>
+              <p>Mama Ifeanyi, who will give us your ageless pieces of wonderful advice? My prayer is that the Lord Jesus whom you served will console your soul.</p>
+              <p>Adieu VV. Adieu my sister from another mother. Adieu ezigbo nwanyị jee nke oma. Good night, dear.</p>
+            </div>
+            <button class="read-more-btn" data-target="fullTributeNwajagu"><i class="fas fa-chevron-down"></i> Read more</button>
+            <div class="signature">— Dr. Fidelis Nwajagu and family</div>
+          </div>
+        </div>
+        <div class="hero-mini" style="background: #f0e6df; margin-top: 8px;">
+          <i class="fas fa-crown"></i>
+          <p><strong>Mrs. Vivian Inyiama</strong> — "A bridge-builder, a consummate civil servant, a mother with intrepid faith."</p>
+        </div>
+      `,
+      
+      memorial: () => `
+        <h2>Memorial & Condolences</h2>
+        <div class="tribute-card">
+          <i class="fas fa-envelope-open-text"></i>
+          <h3>Chief Hon. Dr. (Sir) Hamaka C. Nwoye, KSJI</h3>
+          <p>“The untimely death of Ezinne Vivian Uzoamaka Inyiama came as a rude shock. She was a lady of quintessential motherhood. May her humble soul rest in eternal repose.”</p>
+          <div class="signature">— For the Ezeoyibo Family Compound</div>
+        </div>
+        
+        <div class="grid-2">
+          <div class="reading-block">
+            <i class="fas fa-pray"></i>
+            <h3>Prayer for the Deceased</h3>
+            <p>Show your mercy, Lord, to your daughter Vivian. She strove to do your will. Eternal rest grant unto her, O Lord.</p>
+          </div>
+          <div class="reading-block">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Prayer for Mourners</h3>
+            <p>Grant, O God, that while we lament, we may prepare for our own last hour by a good life.</p>
+          </div>
+        </div>
+
+        <div style="background: #f4eee9; border-radius: 24px; padding: 24px 20px; margin: 24px 0; text-align: center;">
+          <i class="fas fa-tree" style="font-size: 2rem; opacity: 0.7;"></i>
+          <p class="quote-text" style="margin-top: 12px;">“Her life was a blessing, her memory a treasure. She is loved beyond words and missed beyond measure.”</p>
+          <hr style="margin: 16px auto; width: 60px;">
+          <p><i class="fas fa-ribbon"></i> May her gentle soul rest in perfect peace.</p>
+        </div>
+
+        <div class="tribute-card">
+          <h3><i class="fas fa-cross"></i> Final Commendation</h3>
+          <p>“With faith in Jesus Christ, we reverently bring the body of our dear sister to be buried. May Christ, the Good Shepherd, lead her safely home.”</p>
+        </div>
+      `
+    };
+
+    function loadPageAsync(pageId) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const content = contentStore[pageId];
+          if (content) {
+            resolve(content());
+          } else {
+            resolve('<div class="hero-mini">Content not found.</div>');
+          }
+        }, 30);
+      });
+    }
+
+    const mainContainer = document.getElementById("main-content");
+    let currentPage = "home";
+
+    async function renderPage(pageId) {
+      if (!mainContainer) return;
+      mainContainer.style.opacity = "0.5";
+      try {
+        const htmlContent = await loadPageAsync(pageId);
+        mainContainer.innerHTML = `<div class="container">${htmlContent}</div>`;
+        currentPage = pageId;
+        
+        // Update active nav state
+        document.querySelectorAll('.nav-link').forEach(btn => {
+          const btnPage = btn.getAttribute('data-page');
+          if (btnPage === pageId) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+        
+        bindReadMoreToggles();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (err) {
+        console.error('Error loading page:', err);
+        mainContainer.innerHTML = `<div class="container"><div class="hero-mini"><i class="fas fa-sad-tear"></i> Error loading content. Please refresh.</div></div>`;
+      } finally {
+        mainContainer.style.opacity = "1";
+      }
+    }
+
+    function initNavigation() {
+      const navBtns = document.querySelectorAll('.nav-link');
+      navBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const page = btn.getAttribute('data-page');
+          if (page && page !== currentPage) {
+            renderPage(page);
+            if (window.history && window.history.pushState) {
+              const url = new URL(window.location);
+              url.searchParams.set('page', page);
+              window.history.pushState({ page }, '', url);
+            }
+          }
+        });
+      });
+      
+      window.addEventListener('popstate', () => {
+        const params = new URLSearchParams(window.location.search);
+        const pageParam = params.get('page');
+        if (pageParam && contentStore[pageParam]) {
+          renderPage(pageParam);
+        } else {
+          renderPage('home');
+        }
+      });
+    }
+
+    // Initial load
+    const urlParams = new URLSearchParams(window.location.search);
+    const startPage = urlParams.get('page') && contentStore[urlParams.get('page')] ? urlParams.get('page') : 'home';
+    renderPage(startPage);
+    initNavigation();
+  </script>
+</body>
+</html>
