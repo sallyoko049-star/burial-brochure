@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
   <title>In Loving Memory | Mrs. Vivian Uzoamaka Inyiama | Funeral Brochure</title>
-  <meta name="description" content="Complete funeral memorial brochure for Mrs. Vivian Uzoamaka Inyiama, Pioneer Head, Department of Nursing Science, Caritas University.">
+  <meta name="description" content="Complete funeral memorial brochure for Mrs. Vivian Uzoamaka Inyiama, Pioneer HOD, Department of Nursing Science, Caritas University.">
   <meta name="theme-color" content="#faf7f2">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -82,8 +82,8 @@
       text-align: center;
     }
     .portrait-photo {
-      width: 140px;
-      height: 140px;
+      width: 210px;
+      height: 210px;
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 16px;
@@ -166,6 +166,9 @@
       font-size: 0.8rem;
       color: #5f4c38;
       margin-top: 30px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
     .date-badge {
       font-size: 0.72rem;
@@ -236,7 +239,7 @@
       .bio-portrait { flex: 0 0 180px; max-width: 180px; }
       .bio-text { flex: 1; }
       h2 { font-size: 2rem; }
-      .portrait-photo { width: 160px; height: 160px; }
+      .portrait-photo { width: 270px; height: 270px; }
     }
     @media (max-width: 480px) {
       .container { padding: 0 16px; }
@@ -244,7 +247,7 @@
       .nav-link { font-size: 0.72rem; padding: 6px 12px; }
       h2 { font-size: 1.55rem; padding-left: 12px; }
       .tribute-card { padding: 16px; }
-      .portrait-photo { width: 120px; height: 120px; }
+      .portrait-photo { width: 180px; height: 180px; }
       .tribute-portrait { width: 50px; height: 50px; margin-right: 10px; }
     }
   </style>
@@ -255,7 +258,7 @@
       <div class="header-inner">
         <div class="logo">
           <h1>Vivian Uzoamaka Inyiama</h1>
-          <p>1968 ✦ 2026 | Pioneer Head, Nursing Science</p>
+          <p>1968 ✦ 2026 | Pioneer HOD, Nursing Science</p>
         </div>
         <div class="nav-links" id="nav-menu">
           <button class="nav-link" data-page="home">Home</button>
@@ -272,11 +275,11 @@
     <div class="container"><div class="loading-spinner"><i class="fas fa-peace"></i> Loading memorial...</div></div>
   </main>
 
-  <footer>
+  <footer style="position: fixed; bottom: 0; width: 100%;">
     <div class="container">
-      <p>Caritas University, Amorji Nike, Emene, Enugu | PMB 1264, Enugu, Nigeria</p>
-      <p>Website: www.caritasuni.edu.ng | Email: info@caritasuni.edu.ng</p>
-      <p style="margin-top: 10px;">“Eternal rest grant unto her, O Lord, and let perpetual light shine upon her.”</p>
+      <!-- <p>Caritas University, Amorji Nike, Emene, Enugu | PMB 1264, Enugu, Nigeria</p>
+      <p>Website: www.caritasuni.edu.ng | Email: info@caritasuni.edu.ng</p> -->
+      <p style="margin-top: 10px; font-size: 1.2rem;">“Eternal rest grant unto her, O Lord, and let perpetual light shine upon her.”</p>
     </div>
   </footer>
 
@@ -336,21 +339,10 @@
             <p>Funeral ceremony follows at the St. Joseph's field, Ozom.</p>
             <p><strong>16th April, 2026</strong></p>
           </div>
-          <div class="subtle-divider"></div>
-          <h2 style="border-left: none; font-size: 1.3rem;">DEATH IN THE IVORY TOWER<br>TRIBUTE TO MRS VIVIAN INYIAMA<br>PIONEER HEAD, DEPARTMENT OF NURSING SCIENCE</h2>
-          <p class="quote-text">The sudden death of Mrs. Inyiama in the early hours of Monday, 9th March, 2026, left the University Community in deep shock and disbelief that a distinguished academic has finally taken her bow from mother earth.</p>
-          <div id="home-cover-extra" class="toggle-extra">
-            <p>We gather here today Thursday, 16th April, 2026 in memory of our dear staff and Colleague Late Mrs. Vivian Inyiama. Death has taken away a genuinely warm individual who worked tirelessly as the Pioneer Head Department of Nursing Science, Caritas University, Amorji-Nike Enugu. During her active days in the University she was resourceful, peaceful and diligent in the discharge of her duties. Even in her ill health, she cared so much in seeing that students nurtured under her leadership are optimizing in the real light of Nursing.</p>
-            <p><em>“Mrs. Inyiama has successfully run the race, what remains is the crown of honour that the good Lord will bestow on her” Good night our beloved Head of Department until the resurrection morning.</em></p>
-            <p>Adieu HOD</p>
-            <p>Adieu Vivian the kind hearted woman</p>
-            <p>Adieu Mrs. Inyiama, the mother of all mothers</p>
-            <div class="signature">— M. I. Onwukin, Registrar<br>For Caritas University Community</div>
-          </div>
-          <button class="read-more-btn" data-target="home-cover-extra" aria-expanded="false"><i class="fas fa-chevron-down"></i> Read more</button>
+          
         </div>
 
-        <div class="tribute-card expandable-section is-clickable" data-target="friend-sister-extra">
+        <div class="tribute-card expandable-section is-clickable" data-target="friend-sister-extra" style="margin-bottom: 120px;">
           <div class="tribute-header">
             <img src="${getTributeImage('EZ')}" class="tribute-portrait" alt="Tribute portrait">
             <h3>Tribute to a Friend and Sister</h3>
@@ -372,24 +364,24 @@
       `,
 
       biography: () => `
-        <div class="bio-flex">
+        <div class="bio-flex" style="margin-bottom: 120px;">
           <div class="bio-portrait">
-            <img src="${vivianBioPhoto}" alt="Mrs. Vivian Uzoamaka Inyiama" class="portrait-photo">
+            <img src="${vivianBioPhoto}" alt="Mrs. Vivian Uzoamaka Inyiama" class="portrait-photo" style="width:160px; height:160px;">
             <p class="date-badge">4th February 1968 – 9th March 2026</p>
           </div>
           <div class="bio-text tribute-card expandable-section is-clickable" data-target="biography-extra" style="background: transparent; border: none; padding: 0; margin: 0;">
             <h2>Biography Of VIVIAN UZOAMAKA INYIAMA</h2>
             <p>Vivian Uzoamaka Inyiama was born on the 4th of February, 1968, into the loving family of late Felicia and Romanus Onodugo of Umuavulu-Abor in Ojebe Ogene, Udi Local Government Area of Enugu State. She was the third of seven children born to her parents. Born to devoted Catholic parents who raised her with good morals, discipline, and the fear of God. From childhood, Vivian manifested a high level of intellectual ability, showed signs of kindness, strength, and a deep sense of responsibility towards her family and those around her.</p>
             <p>She received her primary education at Iva-Valley Primary School in Enugu, where she obtained her First School Leaving Certificate. She later proceeded to Idaw River Girls Secondary School, Enugu, for her secondary education. Because of her passion for caring for people, at the age of 19, one year after completing her secondary school studies and achieving excellent results in her WAEC, she applied to the then Anambra State Health Management Board Programme who then employed young school leavers and sent them to schools of nursing before integrating them into the civil service.</p>
-            <div id="biography-extra" class="toggle-extra">
-              <p>She was lucky to be successful and was sent to Bishop Shanahan School of Nursing and Midwifery, Nsukka, where she trained as a nurse and midwife. In her quest for knowledge and professional development, she furthered her studies at the University of Nigeria, Enugu Campus, and Imo State University for her postgraduate education.</p>
+            <p>She was lucky to be successful and was sent to Bishop Shanahan School of Nursing and Midwifery, Nsukka, where she trained as a nurse and midwife. In her quest for knowledge and professional development, she furthered her studies at the University of Nigeria, Enugu Campus, and Imo State University for her postgraduate education.</p>
               <p>Vivian Uzoamaka Inyiama dedicated her working life to the service of humanity. She worked with the Enugu State Ministry of Health and served most of her career at Park Lane General Hospital, Enugu, which later became Enugu State University Teaching Hospital, Enugu. She rose to the rank of Deputy Director of Nursing Services and headed different units at Park Lane Hospital before her retirement at the age of 54. She was known as a committed, hardworking, and compassionate nurse who treated patients with care, patience, and love. Her passion for nursing made her loved by colleagues, patients, and everyone who came in contact with her.</p>
+            <div id="biography-extra" class="toggle-extra">
               <p>Having retired early because her years in the School of Nursing were counted as part of her service years, she quickly sought other means of livelihood. This made her secure an appointment with Caritas University, where she was made the Head of the Nursing Department of the University — a position she held until ill health prevented her from functioning effectively again. She never believed in idleness or laziness, which made her take up other part-time jobs, such as working as the Chief Nursing Officer at the Institute of Management and Technology Clinic, participating in training personnel for the World Health Organisation across Nigeria, training Traditional Birth Attendants for the Ministry of Health, Enugu State, and lots more. She was a woman of great kindness, clarity of thought, and uncommon generosity. Vivian was always ready to support family, friends, and even strangers. She made countless sacrifices for her family, and even during her time of illness, she continued to show concern for others rather than herself. Her life was a shining example of selflessness, strength, and dedication.</p>
               <p>Vivian married her heartthrob, Mr. Cyril Chukwuemeka Inyiama, who hailed from Ozom, Mgbagbu-Owa, in the year 1997. They were blessed with three lovely boys: Ugochukwu, Ifeanyichukwu, and Chukwuemeka. She loved her family deeply and gave her all to ensure their proper upbringing, well-being, and happiness. She was also a wonderful sister, relative, and friend whose presence brought peace and comfort to many.</p>
               <p>Being born and raised by staunch Catholic parents and married into another good Catholic family, Vivian continued her Christian life with much dedication and devotion. She was a very active member of the Catholic Women Organisation, Catholic Charismatic Renewal of Nigeria and Mother of Perpetual Help Sodality, in the parishes where she lived like St. Paul, Awkunanaw and Emmanuel Parish, Emene. She was not silent either in the Church activities of her husband's home town, St. Paul Mgbagbu-Owa where she participated actively especially in teaching and giving health talks to women during the Annual August meetings. She remained the President of Catholic Nurses Guild of Enugu Diocese until her demise.</p>
               <p>After a life of service, sacrifice, and love, Vivian passed on, on the 9th of March, 2026. Her passing has left a great vacuum in the lives of her family, friends, and all who knew her. Though she is no longer with us, her good works, kindness, and memories will continue to live in our hearts forever.</p>
               <p>She will always be remembered for her love, her sacrifices, her strength, and her unwavering care for others.</p>
-              <div class="signature">May her gentle soul rest in perfect peace.<br>Rev. Fr. Stan Uche Onodugo, brother.</div>
+              <div class="signature" style="margin-bottom: 220px;">May her gentle soul rest in perfect peace.<br>Rev. Fr. Stan Uche Onodugo, brother.</div>
             </div>
             <button class="read-more-btn" data-target="biography-extra" aria-expanded="false"><i class="fas fa-chevron-down"></i> Read more</button>
           </div>
@@ -616,7 +608,7 @@
           <div class="igbo"><strong>EKPERE MAKA NDI N'ERU UJU</strong><br>O Chukwu, anyi n'ario ebe anyi n'akwa akwa ariri maka onwu nke nwaodibo Gi bu Mrs. Vivian Uzoamaka Inyiama k'anyi na-echeta mgbe niile na ubochi onwu nke anyi na-abiawanye nso. Nye anyi grasia Gi iji kwado maka ubochi ikpeazu ahu site na ibi ndu di mma mgbe niile, k'onwu mberede n'onwu akwadoghi akwado ghara ikwudo anyi, kama k'anyi na-eche nche oge niile ka o ga-abu mgbe obula I kporo anyi, ka anyi nwee ike iso banye n'anuri ebebe. Site na Kristi Dinwenu anyi. Amen.</div>
         </div>
 
-        <div class="reading-block">
+        <div class="reading-block" style="margin-bottom: 120px;">
           <h3>FOR THE DECEASED</h3>
           <p>May Mary, the most Virgin Mother of God, kindest comforter of those who mourn, commend to her Son the soul of Mrs. Vivian Uzoamaka Inyiama who has departed this life, that through her maternal intercession, she may quickly reach her longed for home in the heavenly fatherland, and live forever. Amen.</p>
           <div class="igbo"><strong>MAKA ONYE NWURU ANWU</strong><br>Ka Maria Nne nke Chukwu, Nne dikarisiri obi ebere, onye ntasi obi ndi na-eru uju hanye n'aka nwa ya mkpuru obi nke Mrs. Vivian Uzoamaka Inyiama onye nke hapugoro uwa nkea, ka o site n'ekpere nke ya dika Nne nwee ike iru osooso n'ulo obibi ahu o na-atu anya ya n'enuigwe, biri na ya ebebe ebebe. Amen.<br><br>V. Ka mkpuruobi, Mrs. Vivian Uzoamaka Inyiama na mkpuruobi ndi niile kwerenu gara aga<br>R. Site n'ebere nke Chukwu wee zuru ike na ndokwa<br><br>V. Ka ha zuru ike na ndokwa<br>R. Amen.</div>
@@ -625,6 +617,39 @@
 
       tributes: () => `
         <h2>Tributes</h2>
+
+        <div class="tribute-card expandable-section is-clickable" data-target="wife-extra">
+          <div class="subtle-divider"></div>
+          <h2 style="border-left: none; font-size: 1.3rem;">DEATH IN THE IVORY TOWER<br>TRIBUTE TO MRS VIVIAN INYIAMA<br>Pioneer HOD, DEPARTMENT OF NURSING SCIENCE</h2>
+          <p class="quote-text">The sudden death of Mrs. Inyiama in the early hours of Monday, 9th March, 2026, left the University Community in deep shock and disbelief that a distinguished academic has finally taken her bow from mother earth.</p>
+          <div id="home-cover-extra" class="toggle-extra">
+            <p>We gather here today Thursday, 16th April, 2026 in memory of our dear staff and Colleague Late Mrs. Vivian Inyiama. Death has taken away a genuinely warm individual who worked tirelessly as the Pioneer HOD Department of Nursing Science, Caritas University, Amorji-Nike Enugu. During her active days in the University she was resourceful, peaceful and diligent in the discharge of her duties. Even in her ill health, she cared so much in seeing that students nurtured under her leadership are optimizing in the real light of Nursing.</p>
+            <p><em>“Mrs. Inyiama has successfully run the race, what remains is the crown of honour that the good Lord will bestow on her” Good night our beloved Head of Department until the resurrection morning.</em></p>
+            <p>Adieu HOD</p>
+            <p>Adieu Vivian the kind hearted woman</p>
+            <p>Adieu Mrs. Inyiama, the mother of all mothers</p>
+            <div class="signature">— M. I. Onwukin, Registrar<br>For Caritas University Community</div>
+          </div>
+          <button class="read-more-btn" data-target="home-cover-extra" aria-expanded="false"><i class="fas fa-chevron-down"></i> Read more</button>
+        </div>
+
+        <div class="tribute-card expandable-section is-clickable" data-target="condolence-extra">
+          <h3>A Condolence Message to Onodugo and Inyiama Families</h3>
+          <p><strong>EZEOYIBO FAMILY COMPOUND:</strong><br>[Chief Hon. Dr. [Sir] Hamaka C. Nwoye, KSJI, JP, Ph. D, COH]<br>1st. April 2026.</p>
+          <p>Beloved Onodugo/Inyama Families,</p>
+          <p><strong>CONDOLENCE MESSAGE:</strong></p>
+          <p>The untimely and most unexpected death of your daughter/wife, and our dear friend, Ezinne Vivian Uzoamaka, came to us with a rude shock. We are deeply touched and nonplussed. Our sentiment of hearty concern lies on the understanding of the familial fondness and love that radiated your relationships with her during her lifetime.</p>
+          <div id="condolence-extra" class="toggle-extra">
+            <p>Our friend, Ezinne Vivian Uzoamaka Inyiama was a lady of untrammeled and quintessential motherhood, versed with uncommon homecraft and exemplary human relationship. She was a bridge-builder; a shrewd, consummate civil servant, and tireless workaholic.</p>
+            <p>She was an ideal Christian mother, with an intrepid faith and astute belief in her God. Hence the staunch resilience and stoic endurance she exhibited throughout the lengthy period of her tortuous ailment.</p>
+            <p>The passing on of this great and highly valued wife, mother, sister, and friend, at this unexpected time and manner, could indeed, be excruciatingly painful.</p>
+            <p>However, I sincerely urge the families of Inyama and Onodugo, other friends and relations, to draw their fortitude from the voices of our fathers in faith, Saints Bernard and Alphonsus, who described death as:</p>
+            <p><em>“The end of labours; the consummation of victory, and the gate of life.”</em></p>
+            <p>Kindly accept the heartfelt condolences of my entire family, as we pray God to grant the humble soul of Ezinne Vivian Uzoamaka eternal repose, through the intercession of our Blessed Mother Mary.</p>
+            <div class="signature">Sign:<br>Chief Hon. Dr. [Sir] Hamaka C. Nwoye.</div>
+          </div>
+          <button class="read-more-btn" data-target="condolence-extra" aria-expanded="false"><i class="fas fa-chevron-down"></i> Read more</button>
+        </div>
 
         <div class="tribute-card expandable-section is-clickable" data-target="wife-extra">
           <div class="tribute-header"><img src="${getTributeImage('C')}" class="tribute-portrait" alt="Tribute portrait"><h3>A Tribute to “Baby”<br>MY DEARLY BELOVED WIFE</h3></div>
@@ -695,7 +720,7 @@
           <div class="signature">— Mrs. Chika Igboelinam</div>
         </div>
 
-        <div class="tribute-card">
+        <div class="tribute-card" style="margin-bottom: 120px;">
           <div class="tribute-header"><img src="${getTributeImage('RO')}" class="tribute-portrait" alt="Tribute portrait"><h3>Tribute To A Dear Sister</h3></div>
           <p>Dear Sister, your transition was just like a dream. But a reality that I should accept. During your sick bed you assured us that you are strong, little did we know that you have completed your task on earth. You impacted so many people positively. Your kindness, wisdom and joy will continue to inspire those you left behind. Your life was a blessing. Your memory a treasure. You are loved beyond words and missed beyond measure, but God loved you most.</p>
           <p>May your gentle soul continue to rest in peace.<br>Adieu dear sister<br>Adieu Ojinwayo<br>Adieu Mama Ugo</p>
@@ -704,27 +729,9 @@
       `,
 
       memorial: () => `
-        <h2>Memorial & Condolences</h2>
+        <h2>Memorial</h2>
 
-        <div class="tribute-card expandable-section is-clickable" data-target="condolence-extra">
-          <h3>A Condolence Message to Onodugo and Inyiama Families</h3>
-          <p><strong>EZEOYIBO FAMILY COMPOUND:</strong><br>[Chief Hon. Dr. [Sir] Hamaka C. Nwoye, KSJI, JP, Ph. D, COH]<br>1st. April 2026.</p>
-          <p>Beloved Onodugo/Inyama Families,</p>
-          <p><strong>CONDOLENCE MESSAGE:</strong></p>
-          <p>The untimely and most unexpected death of your daughter/wife, and our dear friend, Ezinne Vivian Uzoamaka, came to us with a rude shock. We are deeply touched and nonplussed. Our sentiment of hearty concern lies on the understanding of the familial fondness and love that radiated your relationships with her during her lifetime.</p>
-          <div id="condolence-extra" class="toggle-extra">
-            <p>Our friend, Ezinne Vivian Uzoamaka Inyiama was a lady of untrammeled and quintessential motherhood, versed with uncommon homecraft and exemplary human relationship. She was a bridge-builder; a shrewd, consummate civil servant, and tireless workaholic.</p>
-            <p>She was an ideal Christian mother, with an intrepid faith and astute belief in her God. Hence the staunch resilience and stoic endurance she exhibited throughout the lengthy period of her tortuous ailment.</p>
-            <p>The passing on of this great and highly valued wife, mother, sister, and friend, at this unexpected time and manner, could indeed, be excruciatingly painful.</p>
-            <p>However, I sincerely urge the families of Inyama and Onodugo, other friends and relations, to draw their fortitude from the voices of our fathers in faith, Saints Bernard and Alphonsus, who described death as:</p>
-            <p><em>“The end of labours; the consummation of victory, and the gate of life.”</em></p>
-            <p>Kindly accept the heartfelt condolences of my entire family, as we pray God to grant the humble soul of Ezinne Vivian Uzoamaka eternal repose, through the intercession of our Blessed Mother Mary.</p>
-            <div class="signature">Sign:<br>Chief Hon. Dr. [Sir] Hamaka C. Nwoye.</div>
-          </div>
-          <button class="read-more-btn" data-target="condolence-extra" aria-expanded="false"><i class="fas fa-chevron-down"></i> Read more</button>
-        </div>
-
-        <div style="background: #f4eee9; border-radius: 24px; padding: 24px; margin: 24px 0; text-align: center;">
+        <div style="background: #f4eee9; border-radius: 24px; padding: 24px; margin: 24px 0; text-align: center; font-size: 1.4rem;">
           <i class="fas fa-tree" style="font-size: 2rem; opacity: 0.7;"></i>
           <p style="margin-top: 12px;"><strong>Call to Eternal GLORY</strong><br>Mrs. Vivian Uzoamaka Inyiama<br>16th April 2026</p>
           <hr style="margin: 16px auto; width: 60px;">
